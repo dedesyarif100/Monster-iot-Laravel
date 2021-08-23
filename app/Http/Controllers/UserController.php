@@ -64,7 +64,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        return redirect('user/index')->with('status', 'User berhasil ditambah!');
+        // return redirect('user/index')->with('status', 'User berhasil ditambah!');
     }
 
     /**
@@ -87,7 +87,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::where('id', $id)->first();
-        return view('pages.user.edit', compact('user'));
+        // return view('pages.user.edit', compact('user'));
         // echo('tes');
     }
 
@@ -115,7 +115,7 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        return redirect('user/index')->with('status', 'User berhasil di update!');
+        // return redirect('user/index')->with('status', 'User berhasil di update!');
     }
 
     /**

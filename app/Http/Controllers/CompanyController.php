@@ -63,29 +63,7 @@ class CompanyController extends Controller
             'address' => $request->address,
         ]);
 
-        return redirect('company/index')->with('status', 'Company berhasil ditambah!');
-
-
-        // $save = Company::create([
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'phone' => $request->phone,
-        //     'website' => $request->website,
-        //     'address' => $request->address,
-        // ]);
-        // dd($save);
-
-        // $Companies = new Company;
-        // $Companies->name = $request->name;
-        // $Companies->email = $request->email;
-        // $Companies->phone = $request->phone;
-        // $Companies->website = $request->website;
-        // $Companies->address = $request->address;
-
-        // $Companies->save();
-
-
-        // echo('tes');
+        // return redirect('company/index')->with('status', 'Company berhasil ditambah!');
     }
 
     /**

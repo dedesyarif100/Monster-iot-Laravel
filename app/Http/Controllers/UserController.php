@@ -66,9 +66,6 @@ class UserController extends Controller
         ]);
         return redirect('user/index')->with('status', 'User berhasil ditambah!');
         // $data = $request->all();
-
-        // $users = User::create($data)->orderBy('id', 'DESC');
-        // return redirect()->route('user.index', compact('users'));
     }
 
     /**
